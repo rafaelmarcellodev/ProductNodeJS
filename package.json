@@ -1,0 +1,12 @@
+{
+  "name": "productnodejs",
+  "version": "1.0.0",
+  "description": "Esse projeto é uma API CRUD de produtos. Ele usa Node.js e Express.js para o backend e MySQL para o banco de dados. Inclui um middleware para validação de dados.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rafael Marcello",
+  "license": "ISC"
+}
