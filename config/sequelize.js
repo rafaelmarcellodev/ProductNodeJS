@@ -1,11 +1,17 @@
 require('dotenv').config();
 const { Sequelize } = require('sequelize');
 
+const ENVIRONMENT = process.env.NODE_ENV || 'development';
+const DATABASE = ENVIRONMENT === 'production' ? process.env.DB_NAME_PRD : process.env.DB_NAME_DEV;
+const USERNAME = ENVIRONMENT === 'production' ? process.env.DB_USER_PRD : process.env.DB_USER_DEV;
+const PASSWORD = ENVIRONMENT === 'production' ? process.env.DB_PASS_PRD : process.env.DB_PASS_DEV;
+const HOST = ENVIRONMENT === 'production' ? process.env.DB_HOST_PRD : process.env.DB_HOST_DEV;
+
 const sequelize = new Sequelize({
-    database: process.env.DB_NAME_DEV || 'productnodejsdb_development',
-    username: process.env.DB_USER_DEV || 'root',
-    password: process.env.DB_PASS_DEV || 'root',
-    host: process.env.DB_HOST_DEV || '127.0.0.1',
+    database: DATABASE,
+    username: USERNAME,
+    password: PASSWORD,
+    host: HOST,
     dialect: 'mysql',
 });
 
