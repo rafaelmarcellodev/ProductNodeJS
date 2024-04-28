@@ -25,7 +25,7 @@ Para instalar o projeto e suas dependências, siga estas etapas:
 
 1. **Clone o Repositório**:
    ```bash
-   git clone <URL do repositório>
+   git clone https://github.com/rafaelmarcellodev/ProductNodeJS.git
    ```
 
 2. **Acesse o Diretório do Projeto**:
@@ -75,12 +75,6 @@ Este projeto usa MySQL para o banco de dados. Certifique-se de que o MySQL está
 
    ```javascript
    sequelize.sync()
-  .then(() => {
-    console.log('Banco de dados sincronizado');
-  })
-  .catch((err) => {
-    console.error('Erro ao sincronizar banco de dados:', err);
-  });
    ```
 
 ## 📄 Uso da API
