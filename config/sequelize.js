@@ -17,7 +17,7 @@ const sequelize = new Sequelize({
 
 sequelize.authenticate()
     .then(() => {
-        console.log('Conexão com MySQL bem-sucedida');
+        console.log('Conexão com MySQL bem-sucedida no ambiente:', ENVIRONMENT);
     })
     .catch((err) => {
         console.error('Erro ao conectar ao MySQL:', err);
