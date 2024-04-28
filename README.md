@@ -30,7 +30,7 @@ Para instalar o projeto e suas dependências, siga estas etapas:
 
 2. **Acesse o Diretório do Projeto**:
    ```bash
-   cd nome-do-projeto
+   cd ProductNodeJS
    ```
 
 3. **Instale as Dependências**:
@@ -81,7 +81,7 @@ Este projeto usa MySQL para o banco de dados. Certifique-se de que o MySQL está
 
 Para interagir com a API CRUD de produtos, você pode usar ferramentas como exemplo o Postman. Aqui estão alguns exemplos de operações CRUD:
 
-**Se preferir importar a collection do Postman, na raiz do projeto contém um arquivo chamado `ProductNodeJS.postman_collection.json`**
+Se preferir importar a collection do Postman, na raiz do projeto contém um arquivo chamado `ProductNodeJS.postman_collection.json`
 
 - **Criar Produto (POST)**:
    Envie uma solicitação POST para `/api/products` com um corpo JSON contendo detalhes do produto.
